@@ -1,10 +1,13 @@
 <template>
     <section class="featured-products-wrapper">
-        <h2> Our featured products </h2>
+        <h2> featured products </h2>
         <Splide class="slider-wrapper" :options="options" :has-track="false">
             <SplideTrack class="splide-track-wrapper">
-                <SplideSlide class="product">
-
+                <SplideSlide class="product" v-for="product in jsonData" :key="product.id">
+                    <img :src="product.img" alt="Product Image">
+                    <h3> {{ product.name }}</h3>
+                    <p> {{ product.descr }}</p>
+                    <button> View details </button>
                 </SplideSlide>
             </SplideTrack>
 
@@ -27,6 +30,7 @@
 <script lang="ts">
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/vue-splide';
 import { defineComponent } from 'vue';
+import axios from 'axios';
 
 
 export default defineComponent({
@@ -41,8 +45,8 @@ export default defineComponent({
             type: 'loop',
             perPage: 3,
             gap: '15px',
-            height: '15rem',
-            width: '80vw',
+            height: '28rem',
+            width: '85vw',
             perMove: 1,
             focus: 'center',
             pagination: true,
@@ -50,6 +54,16 @@ export default defineComponent({
 
         return { options };
     },
+
+    data() {
+        return {
+            jsonData: []
+        };
+    },
+
+    mounted() {
+        axios.get('/src/dummyData/featuredProducts.json').then(response => { this.jsonData = response.data; })
+    }
 
 });
 </script>

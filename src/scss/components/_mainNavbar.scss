@@ -35,7 +35,7 @@
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
-        max-width: 310px;
+        max-width: 220px;
 
         .right-item-list {
             display: flex;
@@ -44,15 +44,7 @@
             width: 100%;
 
             button {
-                text-transform: uppercase;
-                background-color: #eb0089;
-                border-radius: 4px;
-                color: white;
-                font-weight: 700;
-                font-size: 14px;
-                padding: 11px 21px;
-                border-style: none;
-                min-width: 100px;
+                padding: 12px 22px;
 
                 &:hover {
                     background-color: #bc006e;
