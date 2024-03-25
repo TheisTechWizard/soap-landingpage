@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 800px;
+    padding: 40px 0;
 
     h2 {
         text-transform: uppercase;
@@ -17,7 +19,7 @@
             width: 100%;
 
             .product {
-                background-color: #b2f9fd;
+                background-color: #d5f7f9;
                 max-width: 300px;
                 min-height: 300px;
                 border-radius: 10px;
@@ -26,17 +28,17 @@
                 align-items: center;
                 position: relative;
 
-                &:focus {
-                    background-color: aquamarine;
-                }
-
                 button {
                     position: absolute;
-                    padding: 12px 22px;
+                    padding: 14px 26px;
                     top: 85%;
+                    border: 2px solid #253041;
+                    background-color: white;
+                    color: #253041;
 
                     &:hover {
-                        background-color: #bc006e;
+                        color: white;
+                        background-color: #253041;
                     }
                 }
             }
@@ -48,6 +50,10 @@
 
         .splide__arrow--next {
             right: -4em;
+        }
+
+        .splide__pagination {
+            bottom: -5%;
         }
     }
 }

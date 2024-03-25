@@ -1,6 +1,6 @@
 <template>
     <section class="featured-products-wrapper">
-        <h2> featured products </h2>
+        <h2>featured products</h2>
         <Splide class="slider-wrapper" :options="options" :has-track="false">
             <SplideTrack class="splide-track-wrapper">
                 <SplideSlide class="product" v-for="product in jsonData" :key="product.id">
@@ -18,10 +18,6 @@
                 <button class="splide__arrow splide__arrow--next">
                     <img src="../assets/RightArrow.svg">
                 </button>
-            </div>
-
-            <div class="splide__progress">
-                <div class="splide__progress__bar" />
             </div>
         </Splide>
     </section>
@@ -49,7 +45,7 @@ export default defineComponent({
             width: '85vw',
             perMove: 1,
             focus: 'center',
-            pagination: true,
+            drag: false,
         };
 
         return { options };
