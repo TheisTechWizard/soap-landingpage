@@ -13,10 +13,10 @@
 
             <div class="splide__arrows">
                 <button class="splide__arrow splide__arrow--prev">
-                    <img src="../assets/LeftArrow.svg">
+                    <img src="../assets/ArrowLeft.svg">
                 </button>
                 <button class="splide__arrow splide__arrow--next">
-                    <img src="../assets/RightArrow.svg">
+                    <img src="../assets/ArrowRight.svg">
                 </button>
             </div>
         </Splide>
