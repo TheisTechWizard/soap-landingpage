@@ -53,7 +53,12 @@ export default defineComponent({
 
     data() {
         return {
-            jsonData: []
+            jsonData: [{
+                id: Number,
+                img: String,
+                name: String,
+                descr: String
+            }]
         };
     },
 

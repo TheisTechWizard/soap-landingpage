@@ -4,6 +4,7 @@ import MainNavbar from './components/MainNavbar.vue'
 import HeroSection from './components/HeroSection.vue'
 import FeaturedProducts from './components/FeaturedProducts.vue'
 import AboutUs from './components/AboutUs.vue'
+import productsGrid from './components/ProductsGrid.vue'
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import AboutUs from './components/AboutUs.vue'
   <HeroSection />
   <FeaturedProducts />
   <AboutUs />
+  <productsGrid />
   <RouterView />
 </template>
 

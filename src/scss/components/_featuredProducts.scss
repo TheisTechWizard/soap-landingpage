@@ -45,8 +45,10 @@
             }
         }
 
-        .splide__arrow:focus {
-            outline: 3px solid #4248B3;
+        .splide__arrow {
+            &:focus-visible {
+                outline: 3px solid #4248B3;
+            }
         }
 
         .splide__arrow--prev {

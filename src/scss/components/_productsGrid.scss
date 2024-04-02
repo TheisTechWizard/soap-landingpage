@@ -1,0 +1,17 @@
+.products-wrapper {
+    border-top: 10px solid #00F5B8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        text-transform: uppercase;
+    }
+
+    .products-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        .product {}
+    }
+}
