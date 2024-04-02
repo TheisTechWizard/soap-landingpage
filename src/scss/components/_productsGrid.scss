@@ -11,7 +11,32 @@
     .products-grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
 
-        .product {}
+        .product {
+            background-color: #e2e2e2;
+            max-width: 300px;
+            min-height: 450px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+
+            button {
+                position: absolute;
+                padding: 14px 36px;
+                top: 85%;
+                background-color: #eb0089;
+                border: 2px solid #eb0089;
+                color: white;
+
+                &:hover {
+                    border-color: #bc006e;
+                    background-color: #bc006e;
+                }
+            }
+        }
     }
 }
