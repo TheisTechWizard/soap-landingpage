@@ -3,7 +3,7 @@
         <h2>featured products</h2>
         <Splide class="slider-wrapper" :options="options" :has-track="false">
             <SplideTrack class="splide-track-wrapper">
-                <SplideSlide class="product" v-for="product in jsonData" :key="product.id">
+                <SplideSlide class="product" v-for="product in featuredProducts" :key="product.id">
                     <img :src="product.img" alt="Product Image">
                     <h3> {{ product.name }}</h3>
                     <p> {{ product.descr }}</p>
@@ -53,7 +53,7 @@ export default defineComponent({
 
     data() {
         return {
-            jsonData: [{
+            featuredProducts: [{
                 id: Number,
                 img: String,
                 name: String,
@@ -63,7 +63,7 @@ export default defineComponent({
     },
 
     mounted() {
-        axios.get('/src/dummyData/featuredProducts.json').then(response => { this.jsonData = response.data; })
+        axios.get('/src/dummyData/featuredProducts.json').then(response => { this.featuredProducts = response.data; })
     }
 
 });
