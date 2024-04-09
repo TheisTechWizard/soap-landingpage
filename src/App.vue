@@ -5,6 +5,8 @@ import HeroSection from './components/HeroSection.vue'
 import FeaturedProducts from './components/FeaturedProducts.vue'
 import AboutUs from './components/AboutUs.vue'
 import productsGrid from './components/ProductsGrid.vue'
+import BenefitsSection from './components/BenefitsSection.vue'
+
 </script>
 
 <template>
@@ -13,6 +15,7 @@ import productsGrid from './components/ProductsGrid.vue'
   <FeaturedProducts />
   <AboutUs />
   <productsGrid />
+  <BenefitsSection />
   <RouterView />
 </template>
 
