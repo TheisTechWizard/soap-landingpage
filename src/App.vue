@@ -4,8 +4,9 @@ import MainNavbar from './components/MainNavbar.vue'
 import HeroSection from './components/HeroSection.vue'
 import FeaturedProducts from './components/FeaturedProducts.vue'
 import AboutUs from './components/AboutUs.vue'
-import productsGrid from './components/ProductsGrid.vue'
+import ProductsGrid from './components/ProductsGrid.vue'
 import BenefitsSection from './components/BenefitsSection.vue'
+import CreatorSection from './components/CreatorSection.vue'
 
 </script>
 
@@ -14,8 +15,9 @@ import BenefitsSection from './components/BenefitsSection.vue'
   <HeroSection />
   <FeaturedProducts />
   <AboutUs />
-  <productsGrid />
+  <ProductsGrid />
   <BenefitsSection />
+  <CreatorSection />
   <RouterView />
 </template>
 

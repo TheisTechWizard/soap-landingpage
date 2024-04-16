@@ -4,10 +4,12 @@
     align-items: center;
     min-height: 700px;
     padding: 40px 0;
+    background-color: #4248B3;
 
     h2 {
         text-transform: uppercase;
         padding: 20px;
+        color: white;
     }
 
     .slider-wrapper {
@@ -28,6 +30,7 @@
                 align-items: center;
                 position: relative;
                 border: 2px solid #253041;
+                background-color: white;
 
                 button {
                     position: absolute;
@@ -47,7 +50,7 @@
 
         .splide__arrow {
             &:focus-visible {
-                outline: 3px solid #4248B3;
+                outline: 3px solid #253041;
             }
         }
 
@@ -64,16 +67,16 @@
 
             .splide__pagination__page {
                 &:focus-visible {
-                    outline: 3px solid #4248B3;
+                    outline: 3px solid #253041;
                 }
 
                 &:hover {
-                    background: #5B60C2;
+                    background: #34445B;
                 }
             }
 
             .splide__pagination__page.is-active {
-                background: #4248B3;
+                background: #253041;
 
 
             }
