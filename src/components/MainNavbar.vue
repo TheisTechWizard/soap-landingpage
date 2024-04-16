@@ -6,8 +6,10 @@
             </div>
             <ul class="left-item-list">
                 <p>Home</p>
-                <p>Products</p>
+                <p>Featured</p>
                 <p>About</p>
+                <p>Products</p>
+                <p>Benefits</p>
                 <p>Contact</p>
             </ul>
         </div>
