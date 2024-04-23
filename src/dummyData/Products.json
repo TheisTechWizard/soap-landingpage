@@ -1,45 +1,45 @@
 [
   {
     "id": 1,
-    "img": "../assets/placeholder.jpg",
-    "name": "Lavender",
-    "descr": "Indulge in the calming aroma of lavender with this gentle soap bar. Perfect for relaxing baths and soothing showers."
-  },
-  {
-    "id": 2,
-    "img": "../assets/placeholder.jpg",
+    "img": "/public/Product images/Citrus Burst.png",
     "name": "Citrus Burst",
     "descr": "Awaken your senses with the invigorating scent of citrus. This refreshing soap bar will leave your skin feeling energized and revitalized."
   },
   {
+    "id": 2,
+    "img": "/public/Product images/Peppermint Twist.png",
+    "name": "Peppermint Twist",
+    "descr": "Experience the cool, refreshing sensation of peppermint with this invigorating soap bar. Ideal for morning showers to awaken your senses."
+  },
+  {
     "id": 3,
+    "img": "/public/Product images/Honey Almond.png",
+    "name": "Honey Almond",
+    "descr": "Nourish your skin with the sweet and nutty fragrance of honey almond. This gentle soap bar provides hydration and leaves a delicate scent."
+  },
+  {
+    "id": 4,
+    "img": "/public/Product images/Rose Petal.png",
+    "name": "Rose Petal",
+    "descr": "Elevate your bathing experience with the romantic scent of rose petals. This luxurious soap bar adds a touch of elegance to your daily routine."
+  },
+  {
+    "id": 5,
     "img": "../assets/placeholder.jpg",
     "name": "Coconut Dream",
     "descr": "Escape to a tropical paradise with the creamy coconut fragrance of this luxurious soap bar. Enriched with moisturizing properties for soft, supple skin."
   },
   {
-    "id": 4,
-    "img": "../assets/placeholder.jpg",
-    "name": "Peppermint Twist",
-    "descr": "Experience the cool, refreshing sensation of peppermint with this invigorating soap bar. Ideal for morning showers to awaken your senses."
-  },
-  {
-    "id": 5,
-    "img": "../assets/placeholder.jpg",
-    "name": "Honey Almond",
-    "descr": "Nourish your skin with the sweet and nutty fragrance of honey almond. This gentle soap bar provides hydration and leaves a delicate scent."
-  },
-  {
     "id": 6,
     "img": "../assets/placeholder.jpg",
-    "name": "Oatmeal Spice",
-    "descr": "Indulge in the cozy aroma of oatmeal spice with this comforting soap bar. Infused with exfoliating oats for a gentle scrub."
+    "name": "Lavender",
+    "descr": "Indulge in the calming aroma of lavender with this gentle soap bar. Perfect for relaxing baths and soothing showers."
   },
   {
     "id": 7,
     "img": "../assets/placeholder.jpg",
-    "name": "Rose Petal",
-    "descr": "Elevate your bathing experience with the romantic scent of rose petals. This luxurious soap bar adds a touch of elegance to your daily routine."
+    "name": "Oatmeal Spice",
+    "descr": "Indulge in the cozy aroma of oatmeal spice with this comforting soap bar. Infused with exfoliating oats for a gentle scrub."
   },
   {
     "id": 8,

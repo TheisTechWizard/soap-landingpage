@@ -4,7 +4,7 @@
         <Splide class="slider-wrapper" :options="options" :has-track="false">
             <SplideTrack class="splide-track-wrapper">
                 <SplideSlide class="product" v-for="product in featuredProducts" :key="product.id">
-                    <img :src="product.img" alt="Product Image">
+                    <img :src="product.img" alt="">
                     <h3> {{ product.name }}</h3>
                     <p> {{ product.descr }}</p>
                     <button> View details </button>
@@ -71,7 +71,10 @@ export default defineComponent({
     },
 
     mounted() {
-        axios.get('/src/dummyData/featuredProducts.json').then(response => { this.featuredProducts = response.data; })
+        axios.get('/src/dummyData/Products.json').then(response => {
+            const firstFourItems = response.data.slice(0, 4);
+            this.featuredProducts = firstFourItems;
+        })
     }
 
 });

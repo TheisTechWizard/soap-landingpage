@@ -49,7 +49,7 @@
                 <p class="disclaimer" v-if="isVisible">
                     Disclaimer: Please note that [Insert Company Name] is a fictional company created solely for fun and
                     portfolio purposes. The products and services described on this website are not real, and any
-                    resemblance to actual products or companies is purely coincidental. Please don't sue me
+                    resemblance to actual products or companies is purely coincidental. Please don't sue me.
                 </p>
             </transition>
         </div>
