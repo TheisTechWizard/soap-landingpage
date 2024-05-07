@@ -47,13 +47,23 @@ export default defineComponent({
     setup() {
         const options = {
             type: 'loop',
-            perPage: 3,
+            perPage: 1,
             gap: '15px',
             height: '29rem',
             width: '85vw',
             perMove: 1,
             focus: 'center',
-            drag: false,
+            drag: true,
+            breakpoints: {
+                768: {
+                    perpage: 3,
+                },
+                992: {
+                    drag: false,
+                },
+                1200: {
+                }
+            }
         };
 
         return { options };
