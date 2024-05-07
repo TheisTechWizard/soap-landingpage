@@ -1,8 +1,8 @@
 <template>
-    <section class="products-wrapper">
+    <section id="products" class="products-wrapper">
         <h2>Products</h2>
         <div class="products-grid">
-            <div class="product" v-for="product in  products " :key="product.id">
+            <div class="product" v-for="product in products " :key="product.id">
                 <img :src="product.img" alt="product picture">
                 <h3>{{ product.name }}</h3>
                 <p>{{ product.descr }}</p>

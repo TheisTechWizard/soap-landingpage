@@ -1,5 +1,5 @@
 <template>
-    <section class="about-us-wrapper">
+    <section id="about" class="about-us-wrapper">
         <div ref="fadeElement" class="left-side">
             <h2>About us</h2>
             <transition>

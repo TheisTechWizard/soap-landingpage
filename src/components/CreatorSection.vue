@@ -1,5 +1,5 @@
 <template>
-    <section class="creator-wrapper">
+    <section id="contact" class="creator-wrapper">
         <div class="left-side-content">
             <h2>Meet the creator</h2>
             <div class="content">

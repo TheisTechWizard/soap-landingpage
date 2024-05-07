@@ -4,14 +4,14 @@
             <div class="logo-wrapper">
                 <img src="../assets/Logo.PNG">
             </div>
-            <ul class="left-item-list">
-                <p>Home</p>
-                <p>Featured</p>
-                <p>About</p>
-                <p>Products</p>
-                <p>Benefits</p>
-                <p>Contact</p>
-            </ul>
+            <ol class="left-item-list">
+                <a @click="scrollTo('hero')">Home</a>
+                <a @click="scrollTo('featured')">Featured</a>
+                <a @click="scrollTo('about')">About</a>
+                <a @click="scrollTo('products')">Products</a>
+                <a @click="scrollTo('benefits')">Benefits</a>
+                <a @click="scrollTo('contact')">Contact</a>
+            </ol>
         </div>
         <div class="right-items">
             <ul class="right-item-list">
@@ -21,9 +21,20 @@
     </section>
 </template>
 
-<script>
-export default {
 
+<script lang="ts">
+export default {
+    methods: {
+        scrollTo(sectionId: string): void {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                window.scrollTo({
+                    top: section.offsetTop,
+                    behavior: 'smooth',
+                });
+            }
+        }
+    }
 }
 </script>
 

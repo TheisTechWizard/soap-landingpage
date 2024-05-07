@@ -1,5 +1,5 @@
 <template>
-    <section class="featured-products-wrapper">
+    <section id="featured" class="featured-products-wrapper">
         <h2>featured products</h2>
         <Splide class="slider-wrapper" :options="options" :has-track="false">
             <SplideTrack class="splide-track-wrapper">
@@ -49,7 +49,7 @@ export default defineComponent({
             type: 'loop',
             perPage: 3,
             gap: '15px',
-            height: '28rem',
+            height: '29rem',
             width: '85vw',
             perMove: 1,
             focus: 'center',
