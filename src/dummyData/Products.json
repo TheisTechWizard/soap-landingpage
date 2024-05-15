@@ -31,7 +31,7 @@
   },
   {
     "id": 6,
-    "img": "../assets/placeholder.jpg",
+    "img": "./assets/placeholder.jpg",
     "name": "Lavender",
     "descr": "Indulge in the calming aroma of lavender with this gentle soap bar. Perfect for relaxing baths and soothing showers."
   },

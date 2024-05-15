@@ -29,7 +29,9 @@ export default {
     },
 
     mounted() {
-        axios.get('/src/dummyData/Products.json').then(response => { this.products = response.data; })
+        axios.get('/src/dummyData/Products.json').then(response => {
+            this.products = response.data
+        })
     }
 }
 </script>
