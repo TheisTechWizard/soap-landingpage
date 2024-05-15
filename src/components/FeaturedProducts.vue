@@ -47,21 +47,26 @@ export default defineComponent({
     setup() {
         const options = {
             type: 'loop',
-            perPage: 1,
-            gap: '15px',
+            gap: '20px',
             height: '29rem',
             width: '85vw',
             perMove: 1,
             focus: 'center',
             drag: true,
+            mediaQuery: 'min',
             breakpoints: {
+                360: {
+                },
                 768: {
-                    perpage: 3,
                 },
                 992: {
                     drag: false,
                 },
                 1200: {
+                    //perpage: 3,
+                    width: 'auto',
+                    gap: '30px',
+                    autoWidth: true,
                 }
             }
         };

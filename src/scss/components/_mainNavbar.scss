@@ -5,6 +5,9 @@
     background-color: #ffffff;
     padding: 15px;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 
     .left-items {
         display: flex;
@@ -28,33 +31,37 @@
         }
     }
 
-    .right-items {
+    .burger-menu {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-end;
 
-        .burger-menu {
-            .burger-icon {
-                width: 50px;
-                height: 50px;
-                cursor: pointer;
-            }
-
-            .menu {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-                display: none;
-            }
-
-            .menu.active {
-                display: block;
-            }
+        .burger-icon {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            z-index: 4;
         }
 
-        .big-screen-btn {
+        .menu {
             display: none;
         }
+
+        .menu.active {
+            display: flex;
+            flex-direction: column;
+            background-color: #263140;
+            height: 100vh;
+            width: 50%;
+            position: fixed;
+            top: 0;
+            right: 0px;
+            z-index: 3;
+        }
+    }
+
+    .big-screen-btn {
+        display: none;
     }
 }
 
@@ -64,7 +71,6 @@
             .logo-wrapper {}
         }
 
-        .right-items {}
     }
 }
 
@@ -81,18 +87,16 @@
             }
         }
 
-        .right-items {
-            .burger-menu {
-                display: none;
-            }
+        .burger-menu {
+            display: none;
+        }
 
-            .big-screen-btn {
-                display: block;
-                padding: 14px 26px;
+        .big-screen-btn {
+            display: block;
+            padding: 14px 26px;
 
-                &:hover {
-                    background-color: #B8006B;
-                }
+            &:hover {
+                background-color: #B8006B;
             }
         }
     }
