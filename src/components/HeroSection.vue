@@ -3,7 +3,7 @@
         <img src="../assets/Toothbrush_Placeholder.PNG">
         <div class="text-btn-wrapper">
             <h1>
-                MODERN LUXURY MEETS EVERYDAY BATHING
+                luxurious soap meets a convenient price
             </h1>
             <button>
                 Shop now
