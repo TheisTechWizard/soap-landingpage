@@ -1,7 +1,7 @@
 <template>
     <section id="featured" class="featured-products-wrapper">
         <h2>featured products</h2>
-        <Splide class="slider-wrapper" :options="options" :has-track="false">
+        <Splide class="slider-wrapper" :options="myOptions" :has-track="false">
             <SplideTrack class="splide-track-wrapper">
                 <SplideSlide class="product" v-for="product in featuredProducts" :key="product.id">
                     <img :src="product.img" alt="">
@@ -32,7 +32,7 @@
 </template>
 
 <script lang="ts">
-import { Splide, SplideSlide, SplideTrack } from '@splidejs/vue-splide';
+import { Splide, SplideSlide, SplideTrack, type Options } from '../../node_modules/@splidejs/vue-splide';
 import { defineComponent } from 'vue';
 import axios from 'axios';
 
@@ -45,7 +45,7 @@ export default defineComponent({
     },
 
     setup() {
-        const options = {
+        const myOptions: Options = {
             type: 'loop',
             gap: '20px',
             height: '29rem',
@@ -63,7 +63,6 @@ export default defineComponent({
                     drag: false,
                 },
                 1200: {
-                    //perpage: 3,
                     width: 'auto',
                     gap: '30px',
                     autoWidth: true,
@@ -71,7 +70,7 @@ export default defineComponent({
             }
         };
 
-        return { options };
+        return { myOptions };
     },
 
     data() {

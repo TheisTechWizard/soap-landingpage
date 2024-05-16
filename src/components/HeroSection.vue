@@ -1,6 +1,6 @@
 <template>
     <section id="hero" class="hero-section-wrapper">
-        <img src="../assets/Toothbrush_Placeholder.PNG">
+        <img src="">
         <div class="text-btn-wrapper">
             <h1>
                 luxurious soap meets a convenient price
@@ -12,7 +12,7 @@
     </section>
 </template>
 
-<script>
+<script lang="ts">
 export default {
 
 }

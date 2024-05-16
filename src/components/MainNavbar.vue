@@ -2,7 +2,7 @@
     <section class="main-navbar-wrapper">
         <div class="left-items">
             <div class="logo-wrapper">
-                <img src="../assets/Logo.PNG">
+                <img src="">
             </div>
             <ol class="navbar-links">
                 <a @click="scrollTo('hero')">Home</a>

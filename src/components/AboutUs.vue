@@ -59,7 +59,7 @@
     </section>
 </template>
 
-<script>
+<script lang="ts">
 export default {
     data() {
         return {
@@ -68,18 +68,24 @@ export default {
     },
 
     mounted() {
-        // Intersection Observer setup
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting && entry.intersectionRatio >= 0.3) {
-                    this.isVisible = true;
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.3 });
+        const fadeElement = this.$refs.fadeElement as HTMLElement;
 
-        // Start observing the target element
-        observer.observe(this.$refs.fadeElement);
+        if (fadeElement) {
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && entry.intersectionRatio >= 0.3) {
+                        this.isVisible = true;
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.3 });
+
+            observer.observe(fadeElement);
+        }
+    },
+
+    refs: {
+        fadeElement: HTMLElement
     },
 };
 </script>
