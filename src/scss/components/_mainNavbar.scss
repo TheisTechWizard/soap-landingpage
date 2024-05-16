@@ -19,6 +19,7 @@
 
         .navbar-links {
             display: none;
+            gap: 25px;
 
             a {
                 text-transform: uppercase;
@@ -26,7 +27,11 @@
                 font-size: 18px;
                 color: #263140;
                 text-align: center;
-                padding: 10px;
+                cursor: pointer;
+
+                &:hover {
+                    color: #4248B3;
+                }
             }
         }
     }
