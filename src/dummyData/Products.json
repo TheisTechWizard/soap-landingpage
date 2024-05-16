@@ -31,19 +31,19 @@
   },
   {
     "id": 6,
-    "img": "./assets/placeholder.jpg",
+    "img": "/ProductImages/Lavender.png",
     "name": "Lavender",
     "descr": "Indulge in the calming aroma of lavender with this gentle soap bar. Perfect for relaxing baths and soothing showers."
   },
   {
     "id": 7,
-    "img": "../assets/placeholder.jpg",
+    "img": "/ProductImages/Cinnamon Spice.png",
     "name": "Cinnamon Spice",
     "descr": "Indulge in the cozy aroma of cinnamon spice with this comforting soap bar. Infused with exfoliating cinnamon for a gentle scrub."
   },
   {
     "id": 8,
-    "img": "../assets/placeholder.jpg",
+    "img": "/ProductImages/Vanilla Bean.png",
     "name": "Vanilla Bean",
     "descr": "Savor the rich and creamy fragrance of vanilla bean with this indulgent soap bar. A treat for your skin and your senses."
   }
